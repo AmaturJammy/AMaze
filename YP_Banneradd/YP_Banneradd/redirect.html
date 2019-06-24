@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html, body {
+            width:  100%;
+            height: 100%;
+            margin: 0px;
+            overflow: hidden;
+            display: block;
+            }
+            .container {
+                position: relative;
+                box-sizing: border-box;
+                border: 1px solid red;
+                margin: 0px;
+                width: 240px;
+                height: 400px;
+                background-image: url("media/images/YpBackround.gif");                
+            }
+            .img {
+                width: 240px;
+                height: 80px;
+            }
+            .text {
+                text-align: center;
+            }
+            .wrapper {
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                border: 1px solid red;
+                text-align: center;
+                
+            }
+            .button {
+                width: 80%;
+                color: black;
+                background-color: blue;
+                bottom: 30px;
+            }
+        </style>        
+    </head>
+    <body>    
+        <div class="container">
+            <div class="text">
+                <p1>You Won!</p1>
+            </div>
+            <div class="wrapper">
+                <input  class="button" type="button" onclick="redirect()" value="Open YellowPages"/>
+                <input  class="button" type="button" onclick="playagain()" value="Play again"/>
+            </div>
+        </div>
+        <script src='amaze.js'></script>        
+    </body>
+</html>
+
+<!--© Jaimy 2019-->
